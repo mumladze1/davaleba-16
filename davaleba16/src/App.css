@@ -1,0 +1,73 @@
+.App {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.task-list {
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 30%;
+  background-color: #f9f9f9;
+  position: relative;
+}
+
+.task-list h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.task-list:nth-child(1) .divider {
+  border-bottom: 3px solid red; /* Thicker line and red color for the first column */
+}
+
+.task-list:nth-child(2) .divider {
+  border-bottom: 3px solid yellow; /* Thicker line and yellow color for the second column */
+}
+
+.task-list:nth-child(3) .divider {
+  border-bottom: 3px solid green; /* Thicker line and green color for the third column */
+}
+
+.divider {
+  border-bottom: 1px solid #ccc; /* Default for other elements if needed */
+  margin-bottom: 10px;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  border: 2px solid; /* border color set by inline style */
+}
+
+.task-item button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.task-item button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+
